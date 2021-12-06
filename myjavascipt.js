@@ -8,18 +8,19 @@ L’output del prezzo finale va messo fuori in forma umana (con massimo due deci
 
 let yourKm = prompt ("Inserisci km da percorrere");
 let yourAge = prompt ("Inserisci la tua età");
-let costoKmTot = (0.21 * yourKm);
+let costoKmTot = (0.21 * yourKm) .toFixed(2);
 
 
-if(yourAge <= 18){
+if(yourAge <18){
     document.getElementById("myprompt").innerHTML = 
     (costoKmTot-(costoKmTot*20)/100) + `€`;
 }else if (yourAge >= 65){
     document.getElementById("myprompt").innerHTML = 
     (costoKmTot-(costoKmTot*40)/100) + `€`;
 }else{
-    document.getElementById("myprompt").innerHTML = costoKmTot  + `€`   
+    document.getElementById("myprompt").innerHTML  = costoKmTot  + `€`;   
 }
+
 
 
 
