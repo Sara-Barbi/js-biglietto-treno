@@ -1,3 +1,16 @@
 .back{
-    background-color: aqua;
+    background-image: url(https://www.milanotoday.it/~media/horizontal-hi/50657453668543/nuovo-treno-trenord-2-2-6.jpeg);
+    background-size: cover;
 }
+.myalign-items- {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+
+
+
+
