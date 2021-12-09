@@ -6,7 +6,7 @@ va applicato uno sconto del 40% per gli over 65.
 L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 */
 
-let yourKm = prompt ("Inserisci km da percorrere");
+let yourKm =parseInt{prompt ("Inserisci km da percorrere")};
 let yourAge = prompt ("Inserisci la tua età");
 let costoKmTot =(0.21 * yourKm) 
 
@@ -17,8 +17,11 @@ if(yourAge <18){
 }else if (yourAge >= 65){
 
     costoKmTot = costoKmTot - ((costoKmTot / 100) * 20);
-    
-}
+}else{
+    costoKmTot;
+}    
+
+
 
 costoKmTot = costoKmTot.toFixed(2)
 
